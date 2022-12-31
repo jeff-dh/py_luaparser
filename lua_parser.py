@@ -93,7 +93,8 @@ class LuaParser:
     def p_var	(self, _):
         '''var		: name
                     | prefixexp '[' exp ']'
-                    | prefixexp '.' name'''
+                    | prefixexp '.' name
+                    | prefixexp ':' name'''
         pass
 
     def p_varlist(self, _):
